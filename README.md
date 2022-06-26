@@ -14,8 +14,6 @@ helm install myworld helloworld
 
 minikube service myworld-helloworld --url
 
-#########################################################################################################################################
-
 ## 4. To deploy Prometheus using Helm Please follow the Below instructions.
 
 ### Create a monitoring namespace.
