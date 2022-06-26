@@ -47,13 +47,16 @@ Steps:
    http://127.0.0.1:9090
 
 ### Updated the scrape source to prometheus ConfigMap.
-```ruby
+
+````
+```
 - job_name: nginx-exporter
   metrics_path: /metrics
   static_configs:
   - targets:
     - prometheus-server.monitoring.svc.cluster.local:8080
 ```
+````
 
 ![Alt text](screenshots/Prometheus.jpg?raw=true "Prometheus.jpg")
 
