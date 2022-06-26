@@ -72,4 +72,15 @@ Steps:
    http://127.0.0.1:3000
    
 ![Alt text](screenshots/grafana.jpg?raw=true "grafana.jpg")
+
+# Minikube node monitoring Dashboard.
+
+![Alt text](screenshots/Minikube_1.jpg?raw=true "Minikube_1.jpg")
+
+![Alt text](screenshots/Minikube_2.jpg?raw=true "Minikube_2.jpg")
+
+
+# Application Monitoring Dashboard
+
+![Alt text](screenshots/Application_1.jpg?raw=true "Application_1.jpg")
    
