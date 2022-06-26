@@ -10,7 +10,7 @@ Steps:
 
 # Deploy the HelloWorld Application.
 
-### Use the HelloWorld helm chart to run the application.
+### Use the HelloWorld helm chart to run the application. The nginx-Prometheus exporter is also included in the below chart to scrape the nginx metrics.
 
    helm install myworld helloworld
 
@@ -61,6 +61,8 @@ Steps:
    export POD_NAME=$(kubectl get pods --namespace monitoring -l "app.kubernetes.io/name=grafana,app.kubernetes.io/instance=grafana" -o jsonpath="{.items[0].metadata.name}")
    kubectl --namespace monitoring port-forward $POD_NAME 3000
 
-### Use the below URL to access the prometheus dashboard.
+### Use the below URL to access the Grafana dashboard.
 
    http://127.0.0.1:3000
+   
+   
