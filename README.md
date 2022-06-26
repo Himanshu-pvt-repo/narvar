@@ -2,23 +2,21 @@ Objective: The take home assignment is to build a local cluster using minikube, 
 
 Steps:
 
-1. Fire the below command to install the minikube and start the local Kubernetes cluster.
+## 1. Fire the below command to install the minikube and start the local Kubernetes cluster.
 
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && sudo install minikube-linux-amd64 /usr/local/bin/minikube && minikube start
 
-2. Use the HelloWorld helm chart to run the application.
+## 2. Use the HelloWorld helm chart to run the application.
 
 helm install myworld helloworld
 
-Get the Nodeport Service URL by using the below command.
+## 3. Get the Nodeport Service URL by using the below command and paste the URL to any browser, it will show the HelloWorld page.
 
 minikube service myworld-helloworld --url
 
-Paste the URL to any browser, it will show the HelloWorld page.
-
 #########################################################################################################################################
 
-3. To deploy Prometheus using Helm Please follow the Below instructions.
+## 4. To deploy Prometheus using Helm Please follow the Below instructions.
 
 # Create a monitoring namespace.
 
