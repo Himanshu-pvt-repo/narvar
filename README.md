@@ -18,7 +18,9 @@ Steps:
 
    minikube service myworld-helloworld --url
 
-![Alt text](screenshots/helloworld.jpg?raw=true "HelloWorld")
+![Alt text](screenshots/helloworld.jpg?raw=true "HelloWorld.jpg")
+
+![Alt text](screenshots/nginx_metrics.jpg?raw=true "nginx_metrics.jpg")
 
 # Deploy Prometheus using Helm Please follow the Below instructions.
 
@@ -44,6 +46,8 @@ Steps:
 
    http://127.0.0.1:9090
 
+![Alt text](screenshots/Prometheus.jpg?raw=true "Prometheus.jpg")
+
 # To deploy Grafana Please follow the Below instructions.
 
 ### Add the Grafana chart repository
@@ -67,4 +71,5 @@ Steps:
 
    http://127.0.0.1:3000
    
+![Alt text](screenshots/grafana.jpg?raw=true "grafana.jpg")
    
