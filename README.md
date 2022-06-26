@@ -18,6 +18,8 @@ Steps:
 
    minikube service myworld-helloworld --url
 
+![Alt text](screenshots/helloworld.jpg?raw=true "HelloWorld")
+
 # Deploy Prometheus using Helm Please follow the Below instructions.
 
 ### Create a monitoring namespace.
