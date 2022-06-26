@@ -22,20 +22,20 @@ minikube service myworld-helloworld --url
 
 kubectl create namespace monitoring
 
-# Add the prometheus-community chart repository.
+### Add the prometheus-community chart repository.
 
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
-# Deploy Prometheus.
+### Deploy Prometheus.
 
 helm upgrade -i prometheus prometheus-community/prometheus --namespace monitoring
 
-# Run the Below command to enable the port forwarding.
+### Run the Below command to enable the port forwarding.
 
 export POD_NAME=$(kubectl get pods --namespace monitoring -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
 
 kubectl --namespace monitoring port-forward $POD_NAME 9090
 
-# Please the below URL to access the prometheus dashboard.
+### Use the below URL to access the prometheus dashboard.
 
 http://127.0.0.1:9090
