@@ -47,7 +47,7 @@ Steps:
    http://127.0.0.1:9090
 
 ### Updated the scrape source to prometheus ConfigMap.
-```
+```ruby
 - job_name: nginx-exporter
   metrics_path: /metrics
   static_configs:
