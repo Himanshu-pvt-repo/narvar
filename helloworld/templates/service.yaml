@@ -12,5 +12,10 @@ spec:
       nodePort: {{ .Values.service.nodePort }}
       protocol: TCP
       name: http
+    - port: {{ .Values.service.exporterport }}
+      targetPort: {{ .Values.service.exportertgport }}
+      nodePort: {{ .Values.service.exporternodePort }}
+      protocol: TCP
+      name: nginx-exporter      
   selector:
     {{- include "helloworld.selectorLabels" . | nindent 4 }}

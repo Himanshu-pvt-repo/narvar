@@ -47,6 +47,12 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+        - name: exporter
+          image: nginx/nginx-prometheus-exporter:0.10.0
+          args:
+          - -nginx.scrape-uri=http://localhost/nginx_status
+          ports:
+            - containerPort: 9113
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
