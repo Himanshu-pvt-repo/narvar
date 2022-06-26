@@ -15,3 +15,29 @@ Get the Nodeport Service URL by using the below command.
 minikube service myworld-helloworld --url
 
 Paste the URL to any browser, it will show the HelloWorld page.
+
+#########################################################################################################################################
+
+3. To deploy Prometheus using Helm Please follow the Below instructions.
+
+# Create a monitoring namespace.
+
+kubectl create namespace monitoring
+
+# Add the prometheus-community chart repository.
+
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
+# Deploy Prometheus.
+
+helm upgrade -i prometheus prometheus-community/prometheus --namespace monitoring
+
+# Run the Below command to enable the port forwarding.
+
+export POD_NAME=$(kubectl get pods --namespace monitoring -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
+
+kubectl --namespace monitoring port-forward $POD_NAME 9090
+
+# Please the below URL to access the prometheus dashboard.
+
+http://127.0.0.1:9090
