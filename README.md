@@ -14,6 +14,9 @@ Steps:
 ```
    helm install myworld helloworld
 ```
+**Note: If you face the ImagePullBackOff error while deploying the template then please login your DockerHub account via Docker login command.
+**
+
 ### Get the Nodeport Service URL by using the below command and paste the URL to any browser, it will show the HelloWorld page. It for the testing only otherwise it's highly recommended to integrate the application with the ingress load balancer.
 
 ```
@@ -98,7 +101,7 @@ Steps:
 
 **In this task, we have touched the high level of monitoring of the application. Below are some recommended metrics which need to be monitored.**
    
-### Containers/Pods Dashboards
+### Containers/Pods Monitoring
 
 1. Average CPU 
 2. Average Memory
@@ -109,7 +112,7 @@ Steps:
 7. Cluster Overall Memory Usage
 8. Cluster Overall CPU Usage
 
-### Uptime Dashboards
+### Uptime Monitoring
 1. Applications uptime
 2. URL uptime
 3. Container Uptime (Running < 1)
@@ -122,3 +125,10 @@ Steps:
 4. Disk Writes
 5. Disk Reads
 6. Load Average
+
+### Applocation Monitoring
+1. 4XX Error Count
+2. 5XX Error Count
+3. Latency
+4. Active Connections
+5. Waiting Connections
