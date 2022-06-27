@@ -57,7 +57,7 @@ Steps:
   metrics_path: /metrics
   static_configs:
   - targets:
-    - prometheus-server.monitoring.svc.cluster.local:8080
+    - myworld-helloworld.default.svc.cluster.local:8080
 ```
 
 ![Alt text](screenshots/Prometheus.jpg?raw=true "Prometheus.jpg")
