@@ -14,7 +14,8 @@ Steps:
 ```
    helm install myworld helloworld
 ```
-### Get the Nodeport Service URL by using the below command and paste the URL to any browser, it will show the HelloWorld page.
+### Get the Nodeport Service URL by using the below command and paste the URL to any browser, it will show the HelloWorld page. It for the testing only otherwise it's highly recommended to integrate the application with the ingress load balancer.
+
 ```
    minikube service myworld-helloworld --url
 ```
@@ -93,4 +94,31 @@ Steps:
 # Application Monitoring Dashboard
 
 ![Alt text](screenshots/Application_1.jpg?raw=true "Application_1.jpg")
+
+
+**In this task, we have touched the high level of monitoring of the application. Below are some recommended metrics which need to be monitored.**
    
+### Containers/Pods Dashboards
+
+1. Average CPU 
+2. Average Memory
+3. Pods Running
+4. Pods Failed
+5. Pods Pending
+6. Pods Restarting
+7. Cluster Overall Memory Usage
+8. Cluster Overall CPU Usage
+
+### Uptime Dashboards
+1. Applications uptime
+2. URL uptime
+3. Container Uptime (Running < 1)
+4. Utility machines uptime (Jenkins, Grafana)
+
+### Nodes Monitoring
+1. CPU
+2. Disk
+3. Memory
+4. Disk Writes
+5. Disk Reads
+6. Load Average
