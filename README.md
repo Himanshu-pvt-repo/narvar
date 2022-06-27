@@ -26,7 +26,7 @@ Steps:
 
 ![Alt text](screenshots/nginx_metrics.jpg?raw=true "nginx_metrics.jpg")
 
-# Deploy Prometheus using Helm Please follow the Below instructions.
+# Deploy Prometheus and the kubernetes metrics-server using Helm Please follow the Below instructions.
 
 ### Create a monitoring namespace.
 ```
